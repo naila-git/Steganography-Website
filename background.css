@@ -1,0 +1,5 @@
+body {
+    background-image: url('C:\Users\imran_4b664gz\Desktop\assignment4/cybersecurity_background.jpg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
