@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    <h2>Homepage</h2>
+    <ul>
+        {% for file in files %}
+        <li><a href="{{ url_for('download_file', filename=file) }}">{{ file }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('login') }}">Login</a>
+    <a href="{{ url_for('upload') }}">Upload Files</a>
+</body>
+</html>
